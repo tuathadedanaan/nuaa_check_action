@@ -323,6 +323,7 @@ def main():
                 uid, id, message1 = get_uid_id(cookies, in_school)
             else:
                 id = uid = 0
+            message1 = "已禁用id uid字段\n"
             result, message2 = check(cookies, geo_api_info, id, uid, in_school)
             message += message1 + message2
         except:
